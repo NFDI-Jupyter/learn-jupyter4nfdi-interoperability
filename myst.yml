@@ -1,21 +1,24 @@
 version: 1
-
 project:
-  title: TRAINING MATERIALS TITLE
-  github: https://github.com/NFDI-Jupyter/REPOSITORY
+  title: Cross-domain interoperability with Jupyter4NFDI
+  github: https://github.com/NFDI-Jupyter/learn-jupyter4nfdi-interoperability
   license: CC-BY-4.0
+
   authors:
-    - name: AUTHOR'S NAME
-      orcid: AUTHOR'S ORCID
+    - name: Aleksandra Pawlik
+      orcid: https://orcid.org/0000-0001-8418-6735
 
   toc:
-    - file: modules/01_MODULE
-
+    - file: notebooks/01_why_interoperability_matters
+    - file: notebooks/02_describe_your_dataset
+    - file: notebooks/03_what_does_this_code_mean
+    - file: notebooks/04_make_two_datasets_work_together
+    - file: notebooks/05_optional_going_further_towards_cdif
 
   # In-page execution (the "power" button at the top of the page) using Thebe
   jupyter:
     binder:
-      repo: NFDI-Jupyter/REPOSITORY
+      repo: NFDI-Jupyter/learn-jupyter4nfdi-interoperability
       provider: github
       ref: main
 
@@ -24,11 +27,14 @@ site:
     logo: "Jupyter4NFDI-top.png"
     favicon: "favicon.svg"
     style: custom.css
+
   actions:
     - title: Jupyter4NFDI
       url: https://nfdi-jupyter.de/
+
   parts:
     primary_sidebar_footer: ''
     footer: |
-      "This work is supported by the DFG project no.521453681."  |
+      "This work is supported by the DFG project no. 521453681." |
       [Jupyter4NFDI](https://nfdi-jupyter.de/)
+```
